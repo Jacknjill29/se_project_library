@@ -56,10 +56,10 @@
       </header>
       <main class="content">
         <section id="staff" class="staff">
-          <h2 class="staff__title">Staff picks</h2>
+          <h2 class="staff__title">Reader picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
-          <ul>
+          <ul class="staff__card">
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">Introduction to Algorithms</h3>
@@ -164,34 +164,34 @@
           </div>
           <div class="events__cover">
             <img
-              src="/images/cafe.png"
+              src="./images/cafe.png"
               alt="Cafe image"
               class="event__image"
               />
             <div class="person" class="person_name_feynman">
               <p class="person__caption">Joan Feynman</p>
               <img
-                src="/images/person_feynman.png" alt="Joan Feynman"
+                src="../se_project_library/images/person_feynman.png" alt="Joan Feynman"
                 class="person__image person__image_size_l"
               />
             </div>
             <div class="person" class="person_name_burbidge">
               <p class="person__caption">Margaret Burbidge</p>
               <img
-                src="/images/person_burbidge.png" alt="Margaret Burbidge"
+                src="../se_project_library/images/person_burbidge.png" alt="Margaret Burbidge"
                 class="person__image person__image_size_m"
               />
             </div>
             <div class="person" class="person_name_cannon">
               <img
-                src="/images/person_cannon.png" alt="Annie Jump Cannon"
+                src="../se_project_library/images/person_cannon.png" alt="Annie Jump Cannon"
                 class="person__image person__image_size_m"
               />
               <p class="person__caption">Annie Jump Cannon</p>
             </div>
             <div class="person" class="person_name_mitchell">
               <img
-                src="/images/person_mitchell.png" alt="Maria Mitchell"
+                src="../se_project_library/images/person_mitchell.png" alt="Maria Mitchell"
                 class="person__image person__image_size_s"
               />
               <p class="person__caption">Maria Mitchell</p>
@@ -199,13 +199,12 @@
             <div class="person" class="person_name_tarter">
               <p class="person__caption">Jill Tarter</p>
               <img
-                src="/images/person_tarter.png" alt="Jill Tarter"
+                src="../se_project_library/images/person_tarter.png" alt="Jill Tarter"
                 class="person__image person__image_size_m"
               />
             </div>
-            </div>
-          <!-- Start creating the composition here -->
-        </section>
+          </div>
+          </section>
 
         <section id="membership" class="membership">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
@@ -283,11 +282,42 @@
               the American Geophysical Union.
             </p>
           </div>
-          <!-- <div class="about__circle"></div> -->
+          <div class="about__circle"></div>
         </section>
       </main>
       <footer id="end_of_page" class="footer">
         <!-- The time to mark up the footer has come, you can do it 💪 -->
+        <section class="footer__columns">
+          <div class="footer__column">
+            <img src="../se_project_library/images/logo_practicum.svg"
+            class="footer__logo"
+            alt="Practiucm Logo"
+            />
+          </div>
+          <div class="footer__column">
+            <div class="footer__columns">
+              <h2 class="footer__column-heading">Hours</h2>
+              <ol class="footer__list">
+              <li class="footer__list_item">Weekdays 9am - 8pm</li>
+              <li class="footer__list_item">Weekends 10am - 6pm</li>
+              </ol>
+            </div>
+          </div>
+          <div class="footer__column">
+            <nav class="footer__column_content_social">
+                <h2 class="footer__column-heading">Social Media</h2>
+                <ol class="footer__list">
+                  <li class="footer__list_item">
+                  <a class="footer__column-link" href="#"><img class="footer__social_icon" src="./images/facebook_white.svg">Facebook</a>
+                  </li>
+                  <li class="footer__list_item">
+                  <a class="footer__column-link" href="#"><img class="footer__social_icon" src="./images/instagram_white.svg">Instagram</a>
+                  </li>
+                </ol>
+            </nav>
+          </div>
+        </section>
+        <p class="footer__copyright">© 2022 Brandon Hamilton-Smith</p>
       </footer>
     </div>
   </body>
